@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+.video_section{
+  width: 100%;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  
+
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+video{
+  overflow:hidden;
+  width: 100% ;
+  
+  position: relative;
+  text-align: center;
+  display: block;
+  
+  
+}
+.video source{
+  object-fit: fill;
+}
+
+.header{
+  position: absolute;
+  top: 0;
+  left: 10%; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 15px;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+
+}
+
+
+.header .logo{
+  width: 20%;
+}
+.contacts{
+  font-size: 45px;
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+}
+
+
+ .contacts i{
+  content: url(/imgs/phone.png);
+  filter: invert(100%);
+  width: 50px;
+  height: 50px; 
+  object-fit: fill;
+  position: relative;
+  top: 10px;
+  
+}
+.contacts span{
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -1px;
+  
+  
+}
+.black_section{
+  padding: 30px 0;
+  background-color: black;
+  margin-top: -10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-decoration: none;
+
+}
+.black_section .logo{
+  width: 150px;
+  margin: 0px 0 30px;
+  
+}
+.photo_items{
+  width: 200px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+}
+.black_text{
+  width: 900px;
+  padding:0 0 0 50px;
+
+}
+.services{
+  margin-top: 60px;
+}
+.services ul li{
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+}
+.services li::before{
+  content: "-";
+}
+.our_projects h2{
+  margin-top: 30px;
+text-align: center;
+font-weight: 700;
+font-size: 60px;
+text-transform: uppercase;
+}
+.cards .flex{
+  justify-content: space-around;
+}
+
+.card{
+  width: 180px;
+  margin: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+.advertising_social_media h2{
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  }
+
+  .cards_{
+    max-width: 550px;
+  }
+.card_{
+  width: 120px;
+  color: #D5313B;
+  margin: 40px 20px 10px;
+  text-transform: uppercase;
+}
+.card_  .text{
+  margin-top: 10px;
+}
+.description{
+  max-width: 550px;
+  padding: 70px 0;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.description.desc_2{
+  margin-top: 35px;
+}
+
+.slidersec h2{
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 50px;
+  }
+.slider_image{
+  width: 500px;
+}
+
+/* Слайдер */
+.slider{
+  position: relative;
+   max-width: 500px;
+   overflow: hidden;
+   margin-top: 60px;
+}
+.slider__item img{
+  text-align: center;
+  justify-content: center;
+  width: 150px;
+  margin: 0 auto;
+}
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  z-index: 10;
+  font-size: 0;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+  left: 0;
+  background-image: url(imgs/arrow_1.png) no-repeat;
+  width: 30px;
+  height: 30px;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+  right: 0;
+  background-image: url(/imgs/arrow_r.png) no-repeat;
+  width: 30px;
+  height: 30px;
+  
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.slick-dots li{
+  list-style: none;
+  margin: 0 5px;
+}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{
+  font-size: 0;
+  width: 10px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.slider_text{
+  max-width: 600px;
+  
+  padding:0 0 0 60px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.blogers_media h2{
+  margin-top: 60px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 50px;
+  }
+.bloger_photos{
+  max-width: 500px;
+  justify-content: space-between;
+  
+}
+.bloger_photo{
+  width: 120px;
+  margin: 20px;
+}
+.bloger_media_text{
+  max-width: 500px;
+  max-width: 600px;
+  
+  padding:0 0 0 60px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.comnanies h2{
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 30px;
+  }
+.companies_logo {
+  margin: 0 auto;
+}
+footer{
+  background-color: rgb(0, 0, 0);
+}
+footer.container{
+  justify-content: space-between;
+}
+.footer_logo{
+  width: 320px;
+  margin-top: 50px;
+}
+ footer .contacts{
+  font-weight: 700;
+  color: #fff;
+  font-size: 30px;
+  line-height: 2;
+}
+footer .contacts ul li{
+   list-style-type: none;
+   margin: 0 0 0 -30px;
+   padding: 0;
+   text-transform: uppercase;
+   max-width: 500px;
+}
+
+.footer_form{
+  border: 3px solid #fff;
+  padding:0 15px 15px 15px;
+  margin-top: 20%;
+  margin-left: 50px;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  
+}
+input{
+  display: block;
+  width: 400px;
+}
+select{
+  display: block;
+  width: 400px;
+}
+
+@media (max-width: 900px){
+  .contacts{
+    font-size: 30px;
+  }
+  .header{
+    left: 20%;
+  }
+  .header .logo{
+    width: 40%;
+  }
+  .contacts i{
+
+    width: 35px;
+    height: 35px;
+  }
+  }
